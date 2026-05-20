@@ -89,11 +89,32 @@
   }
 
   .opcoes {
-    background-color: red;
+    background-color:red;
+
     display:flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px;
+  }
+
+
+  .opcoes h2 { 
+    margin-bottom:20px;
+    color:white;
+  }
+
+
+  .caixas {
+    display:flex;
+    gap:40px;
+  }
+
+
+   .bloco1, .bloco2 {
+    background-color:green;
+    padding:20px;
   }
     
 </style>
@@ -141,17 +162,23 @@
   </div>
 
 <div class="opcoes">
-  
-  <div class="bloco1">
-    <h3>qqqqqqqq</h3>
-    <p>wefwoefnweii</p>
+
+  <h2>MEU TÍTULO</h2>
+
+  <div class="caixas">
+
+    <div class="bloco1">
+      <h3>qqqqqqqq</h3>
+      <p>wefwoefnweii</p>
+    </div>
+
+    <div class="bloco2">
+      <h3>qqqqqqqq</h3>
+      <p>wefwoefnweii</p>
+    </div>
+
   </div>
-  
-  <div class="bloco2">
-    <h3>qqqqqqqq</h3>
-    <p>wefwoefnweii</p>
-  </div>
-  
+
 </div>
 
 
