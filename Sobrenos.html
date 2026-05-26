@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda & Bem-estar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #111;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 80px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .logo {
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        .logo h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .menu {
+            margin-right: 0;
+            width: auto;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            background: transparent;
+            transition: 0.3s;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            color: #2e8b57;
+            border-bottom: 3px #2e8b57 solid;
+        }
+
+
+        .tema {
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .titulo {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .titulo h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .imagem {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .imagem img {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .topo {
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icone-livro {
+            font-size: 3rem;
+            background: rgba(255, 255, 255, 0.3);
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .azul {
+            background-color: #9ed0f2;
+        }
+
+        .roxo {
+            background-color: #e8b7fc;
+        }
+
+        .rosa {
+            background-color: #edacce;
+        }
+
+        .texto-card {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sobre {
+            background-color: #e7f4f9;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .sobre h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .grid-sobre {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            padding: 20px;
+            background: rgb(237, 232, 232);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="logo">
+                <img src="assets/logo.jpeg" alt="logo">
+                <h2>Mente em Equilíbrio</h2>
+            </div>
+
+            <div class="menu">
+                <a>Início</a>
+                <a>Sobre nós</a>
+                <a>Recursos</a>
+            </div>
+
+        </div>
+
+        <div class="tema">
+
+            <div class="titulo">
+                <h2>Conteúdos e Ferramentas</h2>
+                <p>Explore materiais e dicas para cuidar da sua saúde mental todos os dias.</p>
+            </div>
+
+            <div class="imagem">
+                <img src="assets/meditação.jpg" alt="Pessoa meditando">
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="topo azul">
+                        <div class="icone-livro">📖</div>
+                    </div>
+
+                    <div class="texto-card">
+                        <h3>Artigo 1</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="topo roxo">
+                        <div class="icone-livro">📖</div>
+                    </div>
+                    <div class="texto-card">
+                        <h3>Artigo 2</h3>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="topo rosa">
+                        <div class="icone-livro">📖</div>
+                    </div>
+                    <div class="texto-card">
+                        <h3>Artigo 3</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sobre">
+
+                <h2>Sobre nós</h2>
+
+                <div class="grid-sobre">
+
+                    <div class="box">
+                        <h3>Nossa missão</h3>
+                        <p>Promover suporte e bem-estar para estudantes através do acolhimento emocional.</p>
+                    </div>
+
+                    <div class="box">
+                        <h3>Nossa visão</h3>
+                        <p>Criar um ambiente mais saudável e acessível para cuidar da saúde mental no meio acadêmico.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Portal Saúde Mental. Todos os direitos reservados.</p>
+        </footer>
+
+</body>
+
+</html>

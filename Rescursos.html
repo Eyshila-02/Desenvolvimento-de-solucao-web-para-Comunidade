@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+    body {
+        background-color: #ffffff;
+        color: #111;
+    }
+
+
+    .header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 80px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .logo {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+        font-weight: bold;
+        color: #111;
+    }
+
+
+    .menu {
+        margin-right: 0;
+        width: auto;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+        background: transparent;
+        transition: 0.3s;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #111;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu a:hover {
+        color: #2e8b57;
+        border-bottom: 3px #2e8b57 solid;
+    }
+
+    .informacoes {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 70px 80px;
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .informacoestexto {
+        width: 50%;
+        background: transparent;
+    }
+
+    .informacoestexto h2 {
+        font-size: 58px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .informacoestexto p {
+        color: #555;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .opcoes {
+        background-color: rgb(244, 251, 255);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 60px 30px;
+    }
+
+    .opcoes h2 {
+        margin-bottom: 40px;
+        color: #111;
+        font-size: 40px;
+    }
+
+
+    .caixas {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+        background-color: #ffffff;
+        width: 320px;
+        padding: 30px;
+        border-radius: 15px;
+        border: 1px solid #eeeeee;
+        transition: 0.3s;
+    }
+
+    .bloco1:hover,
+    .bloco2:hover,
+    .bloco3:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .bloco1 h4,
+    .bloco2 h4,
+    .bloco3 h4 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .bloco1 p,
+    .bloco2 p,
+    .bloco3 p {
+        color: #666;
+        line-height: 1.5;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <div class="logo">
+                <img src="assets/logo.jpeg" alt="logo">
+                <h2>Mente em Equilíbrio</h2>
+            </div>
+
+            <div class="menu">
+                <a>Início</a>
+                <a>Sobre nós</a>
+                <a>Recursos</a>
+            </div>
+
+        </div>
+
+        <div class="informacoes">
+
+            <div class="informacoestexto">
+                <h2>Recursos</h2>
+                <p>Ferramentas e recursos para ajudá-lo melhor na sua saúde mental</p>
+
+            </div>
+
+            <div class="opcoes">
+
+                <div class="caixas">
+
+                    <div class="bloco1">
+
+                        <h4>Entenda a sua mente</h4>
+                        <p><br>Entenda seus pensamentos, emoções e comportamentos.<br>Desenvolva mais equilíbrio e
+                            autoconhecimento.<br>Transforme sua vida de dentro para fora.</p>
+                    </div>
+
+                    <div class="bloco2">
+
+                        <h4>Desenvolva habilidades</h4>
+                        <p><br>Aprenda, evolua e fortaleça suas competências.<br>Desenvolva confiança para novos
+                            desafios.<br>Transforme conhecimento em resultados.</p>
+                    </div>
+
+                    <div class="bloco3">
+
+                        <h4>Desenvolva habilidades</h4>
+                        <p><br>Aprenda, evolua e fortaleça suas competências.<br>Desenvolva confiança para novos
+                            desafios.<br>Transforme conhecimento em resultados.</p>
+                    </div>
+
+                </div>
+
+               
+
+</body>
+
+</html>
