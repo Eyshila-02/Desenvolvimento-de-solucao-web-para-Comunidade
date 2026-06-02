@@ -83,8 +83,12 @@
 
         .titulo h2 {
             font-size: 2.5rem;
-            color: #2c3e50;
+            color: #000000;
             margin-bottom: 10px;
+        }
+
+        .titulo p {
+            color:#555;
         }
 
         .imagem {
@@ -93,7 +97,7 @@
         }
 
         .imagem img {
-            width: 100%;
+            width: 50%;
             max-height: 600px;
             object-fit: cover;
             border-radius: 20px;
@@ -119,6 +123,7 @@
 
         .card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
         .topo {
@@ -154,6 +159,13 @@
         .texto-card {
             padding: 20px;
             text-align: center;
+            color: #555;
+        }
+
+        .texto-card h3 {
+            font-size: 17px;
+            color: #111;
+            margin-bottom: 10px;
         }
 
         .sobre {
@@ -165,7 +177,8 @@
 
         .sobre h2 {
             text-align: center;
-            color: #2c3e50;
+            color: #000000;
+            font-size: 40px;
         }
 
         .grid-sobre {
@@ -173,16 +186,28 @@
             gap: 30px;
             margin-top: 20px;
             justify-content: center;
+            
         }
 
         .box {
             padding: 20px;
-            background: rgb(237, 232, 232);
+            background: rgb(255, 255, 255);
             transition: 0.3s;
+            border-radius: 10px;
         }
 
         .box:hover {
             transform: translateY(-10px);
+        }
+
+        .box h3{
+            color: #111;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .box p {
+            color:#555; 
         }
 
         footer {
@@ -207,9 +232,9 @@
             </div>
 
             <div class="menu">
-                <a>Início</a>
-                <a>Sobre nós</a>
-                <a>Recursos</a>
+                <a href="inicio.html">Início</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="Rescursos.html">Recursos</a>
             </div>
 
         </div>
@@ -217,41 +242,56 @@
         <div class="tema">
 
             <div class="titulo">
-                <h2>Conteúdos e Ferramentas</h2>
+                <h2 id="conteudos">Conteúdos e Ferramentas</h2>
                 <p>Explore materiais e dicas para cuidar da sua saúde mental todos os dias.</p>
             </div>
 
             <div class="imagem">
-                <img src="assets/meditação.jpg" alt="Pessoa meditando">
+                <img src="assets/criança.jpg" alt="crianca">
             </div>
 
             <div class="cards">
 
                 <div class="card">
                     <div class="topo azul">
-                        <div class="icone-livro">📖</div>
+                        <div class="icone-livro">🧠</div>
                     </div>
 
                     <div class="texto-card">
-                        <h3>Artigo 1</h3>
+                        <h3>Ansiedade nos estudos</h3>
+                        <p>
+                            A ansiedade pode afetar a concentração, a memória e o rendimento escolar.
+                            Aprender a reconhecer os sinais e buscar equilíbrio ajuda a enfrentar os desafios
+                            acadêmicos.
+                        </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="topo roxo">
-                        <div class="icone-livro">📖</div>
+                        <div class="icone-livro">😴</div>
                     </div>
+
                     <div class="texto-card">
-                        <h3>Artigo 2</h3>
+                        <h3>Importância do sono</h3>
+                        <p>
+                            Dormir bem contribui para o aprendizado, melhora a memória e aumenta a disposição.
+                            O descanso adequado é essencial para a saúde física e mental.
+                        </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="topo rosa">
-                        <div class="icone-livro">📖</div>
+                        <div class="icone-livro">⚖️</div>
                     </div>
+
                     <div class="texto-card">
-                        <h3>Artigo 3</h3>
+                        <h3>Equilíbrio entre estudos e lazer</h3>
+                        <p>
+                            Reservar momentos para lazer ajuda a reduzir o estresse e evita a sobrecarga emocional.
+                            Estudar e descansar são partes igualmente importantes da rotina.
+                        </p>
                     </div>
 
                 </div>
@@ -272,6 +312,15 @@
                     <div class="box">
                         <h3>Nossa visão</h3>
                         <p>Criar um ambiente mais saudável e acessível para cuidar da saúde mental no meio acadêmico.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <h3>Por que criamos este projeto?</h3>
+
+                        <p>
+                            O Mente em Equilíbrio foi desenvolvido para conscientizar estudantes sobre a importância
+                            da saúde mental, oferecendo informações, dicas e recursos de apoio para enfrentar os
+                            desafios da vida acadêmica.
                         </p>
                     </div>
 

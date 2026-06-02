@@ -8,11 +8,11 @@
 </head>
 
 <style>
-   * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
     body {
         background-color: #ffffff;
@@ -152,6 +152,49 @@
         line-height: 1.5;
     }
 
+    .mensagem-dia {
+        background-color: #eaf3f7;
+        padding: 40px;
+        border-radius: 15px;
+        margin: 40px auto;
+        text-align: center;
+        max-width: 700px;
+    }
+
+    .mensagem-dia h2 {
+        margin-bottom: 15px;
+        color: #000408;
+    }
+
+    .mensagem-dia button {
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .mensagem-dia button:hover {
+        transform: translateY(-3px);
+    }
+
+    #dica {
+        margin: 20px 0;
+        font-size: 18px;
+        color: #444;
+        min-height: 30px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #2c3e50;
+        color: white;
+        margin-top: 40px;
+    }
 </style>
 
 <body>
@@ -165,11 +208,10 @@
             </div>
 
             <div class="menu">
-                <a>Início</a>
-                <a>Sobre nós</a>
-                <a>Recursos</a>
+                <a href="inicio.html">Início</a>
+                <a href="sobrenos.html">Sobre nós</a>
+                <a href="Rescursos.html">Recursos</a>
             </div>
-
         </div>
 
         <div class="informacoes">
@@ -186,28 +228,84 @@
 
                     <div class="bloco1">
 
-                        <h4>Entenda a sua mente</h4>
-                        <p><br>Entenda seus pensamentos, emoções e comportamentos.<br>Desenvolva mais equilíbrio e
-                            autoconhecimento.<br>Transforme sua vida de dentro para fora.</p>
+                        <h4>Controle da Ansiedade</h4>
+
+                        <p>
+                            Aprenda técnicas simples de respiração e relaxamento para momentos de estresse e
+                            preocupação.
+                        </p>
+
+                        <a href=https://www.youtube.com/watch?v=pv-aymg97JM target="_blank">
+                            Assistir vídeo
+                        </a>
                     </div>
 
                     <div class="bloco2">
 
-                        <h4>Desenvolva habilidades</h4>
-                        <p><br>Aprenda, evolua e fortaleça suas competências.<br>Desenvolva confiança para novos
-                            desafios.<br>Transforme conhecimento em resultados.</p>
+                        <h4>Qualidade do Sono</h4>
+
+                        <p>
+                            Descubra hábitos que ajudam a melhorar o sono e aumentar a disposição para os estudos.
+                        </p>
+
+                        <a href="https://www.youtube.com/results?search_query=sons+para+dormir" target="_blank">
+                            Ouvir sons relaxantes
+                        </a>
                     </div>
 
                     <div class="bloco3">
 
-                        <h4>Desenvolva habilidades</h4>
-                        <p><br>Aprenda, evolua e fortaleça suas competências.<br>Desenvolva confiança para novos
-                            desafios.<br>Transforme conhecimento em resultados.</p>
+                        <h4>Organização dos Estudos</h4>
+
+                        <p>
+                            Conheça métodos de estudo que ajudam a reduzir a sobrecarga e melhorar o rendimento.
+                        </p>
+
+                        <a href="https://www.youtube.com/results?search_query=tecnica+pomodoro" target="_blank">
+                            Ver dicas
+                        </a>
                     </div>
-
                 </div>
+            </div>
+            <div class="mensagem-dia">
 
-               
+                <h2>🌱 Mensagem do Dia</h2>
+
+                <p id="dica">
+                    Clique no botão para receber uma mensagem positiva.
+                </p>
+
+                <button onclick="mostrarDica()">
+                    Receber Mensagem
+                </button>
+
+            </div>
+
+        </div>
+        <script>
+            function mostrarDica() {
+
+                const dicas = [
+                    "Você não precisa resolver tudo hoje.",
+                    "Seu valor não depende apenas das suas notas.",
+                    "Pequenos progressos também são conquistas.",
+                    "Descansar faz parte do aprendizado.",
+                    "Pedir ajuda é um ato de coragem.",
+                    "Você é mais forte do que imagina.",
+                    "Cuide da sua mente com a mesma dedicação que cuida dos seus estudos."
+                ];
+
+                const sorteio = Math.floor(Math.random() * dicas.length);
+
+                document.getElementById("dica").innerHTML =
+                    "💙 " + dicas[sorteio];
+            }
+        </script>
+
+        <footer>
+            <p>&copy; 2026 Portal Saúde Mental. Todos os direitos reservados.</p>
+        </footer>
+
 
 </body>
 
